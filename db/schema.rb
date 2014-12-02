@@ -11,11 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141030195304) do
+ActiveRecord::Schema.define(version: 20141202181251) do
 
   create_table "articles", force: true do |t|
     t.string   "title"
     t.text     "text"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pictures", force: true do |t|
+    t.string   "title"
+    t.string   "description"
+    t.string   "content_type"
+    t.string   "filename"
+    t.binary   "binary_data"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
