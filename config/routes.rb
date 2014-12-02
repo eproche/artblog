@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :pictures
+
   resources :articles
 
   root "welcome#index"
