@@ -1,14 +1,39 @@
-<h1>Entry Conterts</h1>
+<h1>Viewing Zone</h1>
 
-<p>
-  <strong>Title:</strong>
+<table>
+<tr>
+<th>
+<tr>
+<td>
+  <strong>Title of Piece:</strong>
   <%= @article.title %>
-</p>
- 
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
+</td>
+</tr>
 
+<tr>
+<td>
+  <strong>Description:</strong>
+  <%= @article.text %>
+</td>
+</tr>
+
+<tr>
+<td>
+	<strong>Image:</strong>
+	<%= @article.image%>
+</td>
+</tr>
+</th>
+</tr>
+</table>
+
+<p></p>
+
+<table>
+<tr>
+<th>
 <%= link_to 'Back', articles_path %>
 | <%= link_to 'Edit', edit_article_path(@article) %>
+</th>
+</tr>
+</table>
