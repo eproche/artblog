@@ -1,4 +1,8 @@
 class Article < ActiveRecord::Base 
-	validates :title, presence: true, length: {minimum: 4}
+	# attr_accessible :image
+	validates :title, presence: true
+	validates :image, presence: true
+	validates :text, presence: true
+
 	mount_uploader :image, ImageUploader
 end

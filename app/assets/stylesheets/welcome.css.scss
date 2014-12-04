@@ -1,3 +1,14 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.text {
+width: XXpx;
+height: YYpx; margin: 1 auto; 
+padding:27px;
+border:4px solid #021a40;
+border-radius: 1em;
+background-image: url(sky.jpg);
+background-size: 800px 600px;
+background-color: lightblue;
+}

@@ -1,4 +1,7 @@
+<div class ='title'>
 <h1>New Entry</h1>
+</div>
+<p></p>
 
 <%= form_for :article, :html => {:multipart => true}, url: articles_path do |f| %>
   <% if @article.errors.any? %>
