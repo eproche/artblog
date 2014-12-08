@@ -1,28 +1,36 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Evan and Michael's Art Blog
 
-Things you may want to cover:
+This app is intended to provide an online gallery where an artist can easily display high quality, full-size images of their artwork. Focus is on visual appearance and ease of use. A title and description field are required with each uploaded image, but they can be as concise or detailed as the user desires. After creating a new entry it the title and description will appear in the main gallery index along with links to view, edit, or remove. 
 
-* Ruby version
+==Usage:
 
-* System dependencies
+To view the web app, enter the following commands in your terminal
 
-* Configuration
+git clone -b workingversion https://github.com/eproche/artblog.git
 
-* Database creation
+bundle install
 
-* Database initialization
+bundle exec rake db:migrate
 
-* How to run the test suite
+rails server
 
-* Services (job queues, cache servers, search engines, etc.)
+You should now be able to navigate to your local host in the browser and view the app. 
 
-* Deployment instructions
+==Modification:
 
-* ...
+The structure of this app follows the standard rails folder structure. There are two controllers, five views, and one article model with title, text, and image attributes. 
 
+The key development areas are listed below
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+App function:
+
+/app/models
+/app/controllers
+/app/views
+
+App appearance:
+
+/app/assets/images
+/app/assets/stylesheets
